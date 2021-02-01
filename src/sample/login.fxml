@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4c243e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogInController">
+   <right>
+      <AnchorPane prefHeight="369.0" prefWidth="243.0" style="-fx-background-color: #a9dfd0;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField editable="false" layoutX="47.0" layoutY="68.0" style="-fx-background-color: #20de9a; -fx-border-color: #d21eb2;" text="nafis">
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <PasswordField editable="false" layoutX="47.0" layoutY="175.0" style="-fx-background-color: #20de9a; -fx-border-color: #d21eb2;" text="1234" />
+            <Button fx:id="log" layoutX="97.0" layoutY="256.0" mnemonicParsing="false" onAction="#switchScene" style="-fx-background-color: #d5f60f;" text="LOG IN" textFill="#9e4848" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO CONTACT MANAGER" textAlignment="CENTER" wrappingWidth="320.13671875" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+   </center>
+</BorderPane>

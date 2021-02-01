@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #31112c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenu">
+   <children>
+      <Button fx:id="add" layoutX="164.0" layoutY="183.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: #59886b;" stylesheets="@style.css" text="ADD NEW DATA" textFill="#f4f4f2" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="delete" layoutX="164.0" layoutY="230.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: #92140C;" stylesheets="@style.css" text="DELETE DATA" textFill="#f4f4f2" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="searchname" layoutX="164.0" layoutY="278.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: #ea2c62;" stylesheets="@style.css" text="SEARCH BY FIRST NAME AND LAST NAME" textFill="#f4f4f2" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="searchcity" layoutX="164.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: #16697a;" stylesheets="@style.css" text="SEARCH BY CITY" textFill="#f4f4f2" textOverrun="WORD_ELLIPSIS" />
+      <Text fill="#f1f3f8" layoutX="60.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WHAT WOULD YOU LIKE TO DO">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="all" layoutX="164.0" layoutY="133.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: #16a596;" stylesheets="@style.css" text="VIEW ALL DATA" textFill="#f4f4f2" textOverrun="WORD_ELLIPSIS" />
+   </children>
+</AnchorPane>

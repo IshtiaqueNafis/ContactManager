@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mypane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #393e46;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ContactEditANDADD.EditContact">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#fbf6f0" layoutX="34.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="first name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="firstname" layoutX="176.0" layoutY="42.0" />
+            <Text fill="#fbf6f0" layoutX="35.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="last name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="lastname" layoutX="176.0" layoutY="76.0" />
+            <Text fill="#fbf6f0" layoutX="36.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="phone">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="phone" layoutX="176.0" layoutY="116.0" />
+            <Text fill="#fbf6f0" layoutX="36.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email" layoutX="176.0" layoutY="158.0" />
+            <Text fill="#fbf6f0" layoutX="36.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="street address 1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="str1" layoutX="176.0" layoutY="208.0" />
+            <Text fill="#fbf6f0" layoutX="36.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="street address 2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="str2" layoutX="176.0" layoutY="250.0" />
+            <Text fill="#fbf6f0" layoutX="36.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="postal code">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="postalcode" layoutX="176.0" layoutY="297.0" />
+            <TextField fx:id="city" layoutX="176.0" layoutY="341.0" />
+            <Text fill="#fbf6f0" layoutX="34.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="city">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="province" layoutX="459.0" layoutY="43.0" />
+            <Text fill="#fbf6f0" layoutX="372.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="province">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#fbf6f0" layoutX="372.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="country">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="country" layoutX="459.0" layoutY="77.0" />
+            <TextArea fx:id="note" layoutX="391.0" layoutY="297.0" prefHeight="197.0" prefWidth="368.0" />
+            <Text fill="#fbf6f0" layoutX="390.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="note">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="update" layoutX="448.0" layoutY="505.0" mnemonicParsing="false" onAction="#switchScene" style="-fx-background-color: #61b15a;" text="Update changes" textFill="#fffbfb" />
+            <Button fx:id="cancel" layoutX="626.0" layoutY="505.0" mnemonicParsing="false" onAction="#switchScene" style="-fx-background-color: #d35d6e;" text="Cancel" textFill="WHITE" />
+            <DatePicker fx:id="date" layoutX="488.0" layoutY="195.0" />
+            <Text fill="#fbf6f0" layoutX="346.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pick a new date">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ID" disable="true" layoutX="169.0" layoutY="414.0" />
+            <Text fill="#fbf6f0" layoutX="34.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Text fill="#fff9f9" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Contact Information" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </top>
+</BorderPane>

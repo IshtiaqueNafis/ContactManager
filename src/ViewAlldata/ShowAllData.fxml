@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mypane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #495464;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewAlldata.ShowAllData">
+   <top>
+      <Text fill="#eeeded" strokeType="OUTSIDE" strokeWidth="0.0" text="All Avilable Record" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </top>
+   <center>
+      <TableView fx:id="contactTable" prefHeight="301.0" prefWidth="622.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="99.0" text="name" />
+          <TableColumn fx:id="email" prefWidth="86.0" text="email" />
+            <TableColumn fx:id="phone" prefWidth="83.0" text="phone" />
+            <TableColumn fx:id="address" prefWidth="171.0" text="address" />
+            <TableColumn fx:id="bday" text="birthday" />
+            <TableColumn fx:id="note" prefWidth="76.0" text="Note" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <TabPane prefHeight="77.0" prefWidth="600.0" style="-fx-background-color: #5c6e91;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="search by city">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="city" layoutX="14.0" layoutY="12.0" onAction="#searchResult" stylesheets="@style.css" />
+                        <Button fx:id="cityok" layoutX="184.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #16a596;" text="Search by city" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="search by first name and last name">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="147.0" prefWidth="600.0">
+                     <children>
+                        <TextField fx:id="fname" layoutX="14.0" layoutY="12.0" promptText="enter first name" />
+                        <TextField fx:id="lname" layoutX="175.0" layoutY="12.0" promptText="enter last name" />
+                        <Button fx:id="search" layoutX="340.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #9ddfd3;" text="Search" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="CRUD operations">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="mainmenu" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchScene" style="-fx-background-color: #16a596;" text="&lt;-BACK TO MAIN MENU" textFill="#f1f6f9" />
+                        <Button fx:id="delete" layoutX="175.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #a20a0a;" text="DELETE CONTACT" textFill="#f1f6f9" />
+                        <Button fx:id="add" layoutX="317.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #799351;" text="ADD NEW CONTACT" textFill="#f1f6f9" />
+                        <Button fx:id="editEmail" layoutX="462.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #583d72;" text="EDIT CONTACT" textFill="#fcfcfc" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </bottom>
+</BorderPane>
